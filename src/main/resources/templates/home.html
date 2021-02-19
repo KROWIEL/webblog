@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+<header th:insert="blocks/header :: header"></header>
+<main role="main">
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Добро пожаловать так сказать!</h1>
+            <p>Основной функционал этого сайта задуман как блог. Суть проста, заходи и публику новости обо всем на свете.
+            Еще много функционала планируется реализовать но уже вышло не так уж и плохо!<p>
+            <p><a class="btn btn-primary btn-lg" href="/blog" role="button">Перейти к блогу</a></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Сила</h2>
+                <p><b>Си́ла </b>— физическая векторная величина, являющаяся мерой воздействия на данное тело со стороны
+                    других тел или полей. Приложение силы обусловливает изменение скорости тела или появление деформаций
+                    и механических напряжений.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">Кнопочка »</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Ловкость</h2>
+                <p><b>Ло́вкость </b>— (определение, данное Н. А. Бернштейном) — способность двигательно выйти из любого
+                    положения, то есть способность справиться с любой возникшей двигательной задачей: -правильно,
+                    быстро, рационально, находчиво.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">Кнопочка »</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Храбрость</h2>
+                <p><b>Храбрость </b>– черта характера, проявляющаяся в способности личности преодолевать чувство страха
+                    в ситуации опасности и рисковать собой ради достижения цели</p>
+                <p><a class="btn btn-secondary" href="#" role="button">Кнопочка »</a></p>
+            </div>
+        </div>
+
+        <hr>
+
+    </div> <!-- /container -->
+
+</main>
+<div th:insert="blocks/footer :: footer"></div>
+</body>
+</html>
